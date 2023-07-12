@@ -12,20 +12,17 @@
 
  #header{
     height: 80px;
+    background-color: #FFFFFF;
     
-    
-    /* top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10; */
  }
 
 #header .small_logo{
     height: 40px;
-    
 }
 
-
+.search_bar{
+    background-color: #e9ecef;
+}
 
 
 /* *****
