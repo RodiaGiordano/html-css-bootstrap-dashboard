@@ -11,7 +11,7 @@
  *********/
 
  #header{
-    height: 80px;
+    height: 60px;
     background-color: #FFFFFF;
     
  }
@@ -29,8 +29,11 @@
  * NAV * 
  *******/
 
-#aside{
-    width: 50px;
+#sidebar{
+    width: 70px;
+    background-image: url("../img/sidebar-bg.png");
+    background-color: #051E34;
+    height:calc(100vh - 50px);
     
 }
 
@@ -49,8 +52,8 @@
  *********/
 
  @media screen and (min-width: 992px){
-    #aside{
-        width: 200px;
+    #sidebar{
+        width: 150px;
     }
     
  }
