@@ -1,0 +1,29 @@
+/* *****
+ * NAV * 
+ *******/
+
+#navbar{
+    width: 50px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/* *******
+ * MEDIA * 
+ *********/
+
+ @media screen and (min-width: 992px){
+    #navbar{
+        width: 200px;
+    }
+    
+ }
