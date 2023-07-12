@@ -1,8 +1,16 @@
+/* debug */
+.border-debug{
+    border: 1px dashed red;
+
+}
+
+
+
 /* *****
  * NAV * 
  *******/
 
-#navbar{
+#aside{
     width: 50px;
     
 }
@@ -22,7 +30,7 @@
  *********/
 
  @media screen and (min-width: 992px){
-    #navbar{
+    #aside{
         width: 200px;
     }
     
