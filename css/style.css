@@ -6,6 +6,28 @@
 
 
 
+/* *******
+ * HEADER * 
+ *********/
+
+ #header{
+    height: 80px;
+    
+    
+    /* top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; */
+ }
+
+#header .small_logo{
+    height: 40px;
+    
+}
+
+
+
+
 /* *****
  * NAV * 
  *******/
