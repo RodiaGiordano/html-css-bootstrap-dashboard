@@ -1,6 +1,7 @@
 /* debug */
 .border-debug{
     border: 1px dashed red;
+    min-height: 100px;
 
 }
 
@@ -39,8 +40,13 @@
 
 
 
+/* **************
+ * MAIN-CONTENT * 
+ ****************/
 
-
+.main_top{
+    background-color: #1B72E8;
+}
 
 
 
