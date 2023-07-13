@@ -187,23 +187,23 @@
                                         
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control" id="formgroup">
+                                                    <label for="first-name" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" name="first-name" id="first-name"  required>
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" id="formgroup">
+                                                    <label for="last-name" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" name="last-name" id="last-name" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
-                                                <label for="formgroup" class="form-label">Email</label>
+                                                <label for="email" class="form-label">Email</label>
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" id="formgroup">@</span>
-                                                    <input type="email" class="form-control" id="formgroup">
+                                                    <input type="email" class="form-control" name="email" id="email" required>
                                                 </div>
                                             </div>
                                                 
@@ -211,44 +211,44 @@
 
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="formgroup">
+                                                    <label for="pass-1" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" name="pass-1" id="pass-1" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
-                                                <label for="formgroup" class="form-label">indirizzo Email</label>
+                                                <label for="email-2" class="form-label">indirizzo Email</label>
                                                 <div class="input-group mb-3">
                                                     <span class="input-group-text" id="formgroup">@</span>
-                                                    <input type="email" class="form-control" id="formgroup">
+                                                    <input type="email" class="form-control" name="email-2" id="email-2" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="formgroup">
+                                                    <label for="pass-2" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" name="pass-2" id="pass-2" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" id="formgroup">
+                                                    <label for="adress" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" name="adress" id="adress" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Città</label>
-                                                    <input type="email" class="form-control" id="formgroup">
+                                                    <label for="city" class="form-label">Città</label>
+                                                    <input type="text" class="form-control" name="city" id="city" required>
                                                 </div>
                                             </div>
 
                                             <div class="col-3">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">Stato</label>
-                                                    <select name="State" class="form-control" id="formgroup" required>
+                                                    <label for="state" class="form-label">Stato</label>
+                                                    <select name="State" class="form-control" name="state" id="state" required>
                                                         <div class="div"> 
                                                             <option value="">Scegli...</option>
                                                         </div>
@@ -262,8 +262,8 @@
 
                                             <div class="col-2">
                                                 <div class="mb-3">
-                                                    <label for="formgroup" class="form-label">CAP</label>
-                                                    <input type="text" class="form-control" id="formgroup">
+                                                    <label for="cap" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control" name="cap" id="cap" required>
                                                 </div>
                                             </div>
 
@@ -284,18 +284,19 @@
                                             </div>
 
 
-                                            <div class="col-12">
-                                                <a class="btn btn-primary" href="#" role="button">Salva</a>
-                                                <a class="btn btn-warning" href="#" role="button">Svuota</a>
-
+                                            <div class="col">
+                                                <button class="btn btn-primary fw-bold p-2" type="submit">Salva</button>
+                                                <input class="btn btn-warning fw-bold p-2" type="reset" value="Svuota">
                                             </div>
+                                        </form>
+
+
                                                 
                                                     
                                                 
                                                 
                                                 
 
-                                        </form>
 
 
 
