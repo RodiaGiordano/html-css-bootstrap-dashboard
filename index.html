@@ -113,10 +113,143 @@
 
                 
         <section class="w-100">
-            <div class=" main_top container-fluid text-white py-3">
-                <div class="row">
+            <div class=" main_top container-fluid text-white py-4">
+                <div class="row gap-1">
 
-                    <div class="col-6 d-flex flex-column gap-2">
+                    <div class="col col-md me-auto order-md-3 py-2">
+                        <div class="col-12 d-flex justify-content-md-end align-items-center gap-3">
+                            <p class="mb-0 small fw-bold">
+                                Nuovo Studente
+                            </p>
+                            
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <span class="display-7">
+                                    +
+                                </span>
+                            </button>
+
+                            <div class="offcanvas offcanvas-end w-100 text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                <div class="offcanvas-header">
+
+                                    <h4 class="offcanvas-title mb-2" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
+                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                </div>
+
+                                <div class="offcanvas-body ">
+                                    
+                                    <form action="http://learning.tizianonicolai.com/request-catcher/" method="post" class="row g-4">
+                                    
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="first-name" class="form-label">Nome</label>
+                                                <input type="text" class="form-control" name="first-name" id="first-name"  required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="last-name" class="form-label">Cognome</label>
+                                                <input type="text" class="form-control" name="last-name" id="last-name" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label for="email" class="form-label">Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="formgroup">@</span>
+                                                <input type="email" class="form-control" name="email" id="email" required>
+                                            </div>
+                                        </div>
+                                            
+                                                                                                    
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="pass-1" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="pass-1" id="pass-1" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <label for="email-2" class="form-label">indirizzo Email</label>
+                                            <div class="input-group mb-3">
+                                                <span class="input-group-text" id="formgroup">@</span>
+                                                <input type="email" class="form-control" name="email-2" id="email-2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="pass-2" class="form-label">Password</label>
+                                                <input type="password" class="form-control" name="pass-2" id="pass-2" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-12">
+                                            <div class="mb-3">
+                                                <label for="adress" class="form-label">Indirizzo</label>
+                                                <input type="text" class="form-control" name="adress" id="adress" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-6">
+                                            <div class="mb-3">
+                                                <label for="city" class="form-label">Città</label>
+                                                <input type="text" class="form-control" name="city" id="city" required>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-3">
+                                            <div class="mb-3">
+                                                <label for="state" class="form-label">Stato</label>
+                                                <select name="State" class="form-control" name="state" id="state" required>
+                                                    <div class="div"> 
+                                                        <option value="">Scegli...</option>
+                                                    </div>
+                                                    <option value="italy">Italia</option>
+                                                    <option value="Germany">Germania</option>
+                                                    <option value="Spain">Spagna</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-2">
+                                            <div class="mb-3">
+                                                <label for="cap" class="form-label">CAP</label>
+                                                <input type="text" class="form-control" name="cap" id="cap" required>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <label for="formgroup" class="form-label">Foto</label>
+                                            <div class="input-group mb-3">
+                                                <input type="file" class="form-control" id="formgroup">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="col-12">
+                                            <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" required>
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Seleziona per proseguire
+                                            </label>
+                                        </div>
+
+
+                                        <div class="col">
+                                            <button class="btn btn-primary fw-bold p-2" type="submit">Salva</button>
+                                            <input class="btn btn-warning fw-bold p-2" type="reset" value="Svuota">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                
+
+                    <div class="col-12 col-md-5 d-flex flex-column gap-2 py-2">
                         <div class="col-12 d-flex align-items-end gap-2">
                             <h2 class="mb-0">
                                 Boolean
@@ -136,23 +269,27 @@
                                 <i class="fa-solid fa-angles-right fa-xs"></i>
                             </div>
 
-                            <a class="btn border-0" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
+                            <a class="btn border-0 d-lg-none" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
+                                +
+                            </a>
+
+                            <a class="btn border-0 d-none d-lg-block" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
                                 Boolean mobile app
                             </a>
 
-                            <a class="btn border-0" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
+                            <a class="btn border-0 d-none d-lg-block" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
                                 Boolean web app
                             </a>
 
-                            <a class="btn border-0" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
+                            <a class="btn border-0 d-none d-lg-block" style= "--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .6rem; --bs-btn-color: white; --bs-btn-bg: #165BBA" href="#" role="button">
                                 Boolean blog app
                             </a>
                         </div>
                     </div>
 
-                    <div class="col-4 d-flex gap-2">
-                        <div class="col-12 d-flex flex-column justify-content-start gap-2">
-                            <p class="mb-0 small">
+                    <div class="col-12 col-md-3 d-flex gap-2 py-2">
+                        <div class="col-12 d-flex flex-column gap-2">
+                            <p class="mb-0 small fw-bold">
                                 Studenti online negli ultimi 30 minuti
                             </p>
                             <h2 class="mb-0">
@@ -162,138 +299,7 @@
                     </div>
 
 
-                    <div class="col-2 d-flex gap-2">
-                        <div class="col-12 d-flex align-items-center gap-2">
-                            <p class="mb-0 small">
-                                Nuovo Studente
-                            </p>
-                            
-                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
-                                <span class="display-7">
-                                    +
-                                </span>
-                            </button>
-
-                            <div class="offcanvas offcanvas-end w-100 text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                                <div class="offcanvas-header">
-
-                                    <h4 class="offcanvas-title mb-2" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
-                                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                                </div>
-
-                                <div class="offcanvas-body ">
-                                    
-                                        <form action="http://learning.tizianonicolai.com/request-catcher/" method="post" class="row g-4">
-                                        
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="first-name" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control" name="first-name" id="first-name"  required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="last-name" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" name="last-name" id="last-name" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <label for="email" class="form-label">Email</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" id="formgroup">@</span>
-                                                    <input type="email" class="form-control" name="email" id="email" required>
-                                                </div>
-                                            </div>
-                                                
-                                                                                                        
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="pass-1" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" name="pass-1" id="pass-1" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <label for="email-2" class="form-label">indirizzo Email</label>
-                                                <div class="input-group mb-3">
-                                                    <span class="input-group-text" id="formgroup">@</span>
-                                                    <input type="email" class="form-control" name="email-2" id="email-2" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="pass-2" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" name="pass-2" id="pass-2" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-12">
-                                                <div class="mb-3">
-                                                    <label for="adress" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" name="adress" id="adress" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="city" class="form-label">Città</label>
-                                                    <input type="text" class="form-control" name="city" id="city" required>
-                                                </div>
-                                            </div>
-
-                                            <div class="col-3">
-                                                <div class="mb-3">
-                                                    <label for="state" class="form-label">Stato</label>
-                                                    <select name="State" class="form-control" name="state" id="state" required>
-                                                        <div class="div"> 
-                                                            <option value="">Scegli...</option>
-                                                        </div>
-                                                        <option value="italy">Italia</option>
-                                                        <option value="Germany">Germania</option>
-                                                        <option value="Spain">Spagna</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-2">
-                                                <div class="mb-3">
-                                                    <label for="cap" class="form-label">CAP</label>
-                                                    <input type="text" class="form-control" name="cap" id="cap" required>
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-12">
-                                                <label for="formgroup" class="form-label">Foto</label>
-                                                <div class="input-group mb-3">
-                                                    <input type="file" class="form-control" id="formgroup">
-                                                </div>
-                                            </div>
-
-
-                                            <div class="col-12">
-                                                <input class="form-check-input" type="checkbox" value="1" id="flexCheckDefault" required>
-                                                <label class="form-check-label" for="flexCheckDefault">
-                                                    Seleziona per proseguire
-                                                </label>
-                                            </div>
-
-
-                                            <div class="col">
-                                                <button class="btn btn-primary fw-bold p-2" type="submit">Salva</button>
-                                                <input class="btn btn-warning fw-bold p-2" type="reset" value="Svuota">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>   
-                             </div>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </section>
