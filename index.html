@@ -177,81 +177,93 @@
                             <div class="offcanvas offcanvas-end w-100 text-dark" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
 
-                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                    <h4 class="offcanvas-title mb-2" id="offcanvasRightLabel">Inserisci un nuovo studente</h4>
                                     <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
 
                                 <div class="offcanvas-body ">
                                     
-                                        <form action="#" method="post" class="row g-4">
+                                        <form action="http://learning.tizianonicolai.com/request-catcher/" method="post" class="row g-4">
                                         
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Nome</label>
-                                                    <input type="text" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">Nome</label>
+                                                    <input type="text" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Cognome</label>
-                                                    <input type="text" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">Cognome</label>
+                                                    <input type="text" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
 
                                             <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Email</label>
-                                                    <input type="email" class="form-control" id="formGroup">
+                                                <label for="formgroup" class="form-label">Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="formgroup">@</span>
+                                                    <input type="email" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="formGroup">
-                                                </div>
-                                            </div>
-
-                                            <div class="col-6">
-                                                <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Indirizzo Email</label>
-                                                    <input type="email" class="form-control" id="formGroup">
-                                                </div>
-                                            </div>
+                                                
+                                                                                                        
 
                                             <div class="col-6">
                                                 <div class="mb-3">
                                                     <label for="formGroup" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="formGroup">
+                                                    <input type="password" class="form-control" id="formgroup">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <label for="formgroup" class="form-label">indirizzo Email</label>
+                                                <div class="input-group mb-3">
+                                                    <span class="input-group-text" id="formgroup">@</span>
+                                                    <input type="email" class="form-control" id="formgroup">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-6">
+                                                <div class="mb-3">
+                                                    <label for="formgroup" class="form-label">Password</label>
+                                                    <input type="password" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
 
                                             <div class="col-12">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">Indirizzo</label>
+                                                    <input type="text" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
 
-                                            <div class="col-4">
+                                            <div class="col-6">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Città</label>
-                                                    <input type="email" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">Città</label>
+                                                    <input type="email" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
 
-                                            <div class="col-4">
+                                            <div class="col-3">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Password</label>
-                                                    <input type="password" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">Stato</label>
+                                                    <select name="State" class="form-control" id="formgroup" required>
+                                                        <div class="div"> 
+                                                            <option value="">Scegli...</option>
+                                                        </div>
+                                                        <option value="italy">Italia</option>
+                                                        <option value="Germany">Germania</option>
+                                                        <option value="Spain">Spagna</option>
+                                                    </select>
                                                 </div>
                                             </div>
 
-                                            <div class="col-4">
+
+                                            <div class="col-2">
                                                 <div class="mb-3">
-                                                    <label for="formGroup" class="form-label">Indirizzo</label>
-                                                    <input type="text" class="form-control" id="formGroup">
+                                                    <label for="formgroup" class="form-label">CAP</label>
+                                                    <input type="text" class="form-control" id="formgroup">
                                                 </div>
                                             </div>
                                         </form>
