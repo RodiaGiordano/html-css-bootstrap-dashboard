@@ -32,7 +32,7 @@
  *************/
 
 .offcanvas.offcanvas-end{
-    width: 100%;
+   
 }
 
 
@@ -78,6 +78,6 @@
     }
     
     .offcanvas.offcanvas-end{
-        width: 40%;
+        max-width: 40%;
     }
  }
