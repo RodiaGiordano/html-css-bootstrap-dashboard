@@ -26,6 +26,21 @@
 }
 
 
+
+/* ***********
+ * OFFCANVAS * 
+ *************/
+
+.offcanvas.offcanvas-end{
+    width: 100%;
+}
+
+
+
+
+
+
+
 /* *****
  * NAV * 
  *******/
@@ -62,4 +77,7 @@
         width: 150px;
     }
     
+    .offcanvas.offcanvas-end{
+        width: 40%;
+    }
  }
