@@ -55,6 +55,12 @@
     
 }
 
+.menu_nav:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+
+
 
 
 /* **************
@@ -66,8 +72,36 @@
 }
 
 
+/* MAIN-BOTTOM */
+
+.table-hover img{
+    width: 30px;
+    margin-right: 10px;
+}
+
+.table-hover th, td{
+    vertical-align: middle;
+}
 
 
+.icon_table{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #808080;
+    width: 40px;
+    aspect-ratio: 1;   
+    border-radius: 10%;    
+}
+
+    
+    
+
+.icon_table> .fa-solid{
+    /* text-align: center;
+    line-height: 30px; */
+}
+    
 
 
 /* *******
